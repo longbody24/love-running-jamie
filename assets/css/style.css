@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -13,12 +13,12 @@ body {
 }
 
 /* headings and logo */
+
 h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
-
 }
 
 #logo {
@@ -27,7 +27,7 @@ h1, h2 {
     margin-left: 30px;
 }
 
-/* headings and logo */
+/* navigation links */
 
 #menu {
     font-size: 110%;
@@ -47,7 +47,6 @@ h1, h2 {
 #menu a {
     text-decoration: none;
     color: inherit;
-
 }
 
 #menu a:hover {
@@ -58,7 +57,7 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -83,20 +82,19 @@ h1, h2 {
     animation-fill-mode: forwards;
 }
 
-    /* creates the level of zoom for hero image */
-
+/* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
-    to {
+    to{
         transform: scale(1.1);
     }
 }
 
 #cover-text {
     font-size: 130%;
-    font-family: Oswalk, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -158,6 +156,7 @@ hr {
     clear: both;
     margin-bottom: 50px;
 }
+
 .right-about-heading h2 {
     text-align: right;
 }
@@ -184,7 +183,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpeg') no-repeat center center;
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
@@ -192,7 +191,7 @@ hr {
 /* event times */
 
 #times {
-    background-image: url(../images/dublin-city.webp);
+    background-image: url('../images/times-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -208,7 +207,7 @@ hr {
     float: left;
     padding: 30px 0 0 10px;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid white;
     box-sizing: border-box;
 }
 
@@ -235,5 +234,17 @@ footer {
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
+}
 
+/* gallery */
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img {
+    width: 100%;
 }
